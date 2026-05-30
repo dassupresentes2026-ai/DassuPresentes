@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dassu Presentes — Kits e Cosméticos</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a class="logo-area" href="#">
+    <div class="logo-img-wrap">
+        <img src="imagens/logo.png" alt="Dassu Presentes" style="height:44px; width:auto;">
+    </div>
+    <div class="logo-text-block">
+      <span class="lt-nome">Dassu</span>
+      <span class="lt-sub">Kits e Cosméticos</span>
+    </div>
+  </a>
+  <nav>
+    <a onclick="ir('hero')">Início</a>
+    <a onclick="ir('destaques')">Destaques</a>
+    <a onclick="ir('marcas')">Coleções</a>
+    <a onclick="ir('loja')">Nossa Loja</a>
+    <a onclick="ir('sobre')">Sobre</a>
+  </nav>
+  <button class="btn-header" onclick="abrirModal()">Fale Conosco</button>
+</header>
+
+<div class="info-bar">
+  <div class="info-bar-item">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+    </svg>
+    Rua Salvador Gaeta, 539 — Vila Augusta, Guarulhos/SP
+  </div>
+  <div class="info-bar-item">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+      <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+    </svg>
+    Seg–Sáb · 09h às 18h
+  </div>
+  <div class="info-bar-item">
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    (11) 96200-3974
+  </div>
+</div>
+
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <span class="htag">✦ Loja Física em Guarulhos</span>
+      <h1>Presentes que<br><em>encantam</em> e<br><strong>marcam memórias</strong></h1>
+      <p>Kits e cosméticos 100% originais das melhores marcas nacionais — Oboticário, Natura, Eudora e mais. Venha nos visitar em Guarulhos ou fale pelo WhatsApp!</p>
+      <div class="hero-btns">
+        <a class="btn-primary" onclick="ir('destaques')">Ver Destaques</a>
+        <a class="btn-outline" onclick="abrirModal()">Falar pelo WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-right">
+    </div>
+  </div>
+</section>
+
+<div class="pagto-bar">
+  <span class="pagto-label">Formas de pagamento:</span>
+  <span class="pagto-badge">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+    Cartão de Crédito / Débito
+  </span>
+  <span class="pagto-badge">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+    Pix
+  </span>
+  <span class="pagto-badge">
+    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+    Dinheiro
+  </span>
+</div>
+
+<div class="selos-bar">
+  <div class="selo-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+    </svg>
+    <span>100% Autênticos</span>
+  </div>
+  <div class="selo-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+      <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+    </svg>
+    <span>Atendimento Personalizado</span>
+  </div>
+  <div class="selo-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+    </svg>
+    <span>Loja Física em Guarulhos</span>
+  </div>
+  <div class="selo-item">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+    </svg>
+    <span>Clientes Satisfeitos</span>
+  </div>
+</div>
+
+<section class="destaques-section" id="destaques">
+  <div class="section-header center">
+    <span class="section-tag">✦ Mais Vendidos</span>
+    <h2 class="section-title">Produtos em <em>Destaque</em></h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="destaques-grid">
+
+    <div class="destaque-card" onclick="abrirModal()">
+      <div class="destaque-ribbon">Mais Vendido</div>
+        <div class="produto-img">
+          <img src="imagens/MalbecTradicional.png" alt="Nome do Produto">
+          <span class="produto-badge">Destaque</span>
+        </div>
+      <div class="destaque-info">
+        <p class="marca-tag">Oboticário</p>
+        <h3>Malbec Tradicional</h3>
+        <button class="btn-consultar">Consultar Preço</button>
+      </div>
+    </div>
+
+    <div class="destaque-card" onclick="abrirModal()">
+      <div class="destaque-ribbon">Destaque</div>
+      <div class="produto-img">
+        <img src="imagens/FlorattaRed.avif" alt="Floratta Red" class="destaque-img">
+        <span class="produto-badge">Destaque</span>
+      </div>
+      <div class="destaque-info">
+        <p class="marca-tag">Oboticário</p>
+        <h3>Floratta Red</h3>
+        <button class="btn-consultar">Consultar Preço</button>
+      </div>
+    </div>
+
+    <div class="destaque-card" onclick="abrirModal()">
+      <div class="destaque-ribbon">Clássico</div>
+      <div class="produto-img">
+        <img src="imagens/EssencialTradicionalMasc.png" alt="Essencial Tradicional Masc." class="destaque-img">
+        <span class="produto-badge">Destaque</span>
+      </div>
+      <div class="destaque-info">
+        <p class="marca-tag">Natura</p>
+        <h3>Essencial Tradicional Masc.</h3>
+        <button class="btn-consultar">Consultar Preço</button>
+      </div>
+    </div>
+
+    <div class="destaque-card" onclick="abrirModal()">
+      <div class="destaque-ribbon">Favorito</div>
+      <div class="produto-img">
+        <img src="imagens/KaiakTradicionalMasc.jpg" alt="Kaiak Tradicional Masc." class="destaque-img">
+        <span class="produto-badge">Destaque</span>
+      </div>
+      <div class="destaque-info">
+        <p class="marca-tag">Natura</p>
+        <h3>Kaiak Tradicional Masc.</h3>
+        <button class="btn-consultar">Consultar Preço</button>
+      </div>
+    </div>
+
+    <div class="destaque-card" onclick="abrirModal()">
+      <div class="destaque-ribbon">Destaque</div>
+        <div class="produto-img">
+          <img src="imagens/LunaTradicional.jpg" alt="Luna Tradicional" class="destaque-img">
+          <span class="produto-badge">Destaque</span>
+        </div>
+      <div class="destaque-info">
+        <p class="marca-tag">Natura</p>
+        <h3>Luna Tradicional</h3>
+        <button class="btn-consultar">Consultar Preço</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="marcas-section" id="marcas">
+  <div class="section-header center">
+    <span class="section-tag">✦ Nossas Marcas</span>
+    <h2 class="section-title">Explore as <em>Coleções</em></h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="tabs-wrap">
+    <div class="tabs-nav">
+      <button class="tab-btn active" onclick="trocarTab('oboticario', this)">Oboticário</button>
+      <button class="tab-btn" onclick="trocarTab('natura', this)">Natura</button>
+      <button class="tab-btn" onclick="trocarTab('eudora', this)">Eudora</button>
+    </div>
+
+    <!-- TAB: Oboticário -->
+    <div class="tab-content active" id="tab-oboticario">
+      <div class="produtos-grid">
+        <div class="produto-card" onclick="abrirModal()">
+          <div class="produto-img">
+              <img src="imagens/MalbecTradicional.png" alt="Malbec Tradicional" class="produto-img-real">
+            <span class="produto-badge">Destaque</span>
+          </div>
+          <div class="produto-info">
+            <p class="marca-tag">Oboticário</p>
+            <h3>Malbec Tradicional</h3>
+            <p class="desc">Fragrância amadeirada · 100ml</p>
+            <div class="produto-footer">
+              <span class="produto-preco">Consulte</span>
+              <button class="btn-ver">Consultar</button>
+            </div>
+          </div>
+        </div>
+        <div class="produto-card" onclick="abrirModal()">
+          <div class="produto-img">
+               <img src="imagens/FlorattaRed.avif" alt="Floratta Red" class="produto-img-real">
+          </div>
+          <div class="produto-info">
+            <p class="marca-tag">Oboticário</p>
+            <h3>Floratta Red</h3>
+            <p class="desc">Fragrância floral · 75ml</p>
+            <div class="produto-footer">
+              <span class="produto-preco">Consulte</span>
+              <button class="btn-ver">Consultar</button>
+            </div>
+          </div>
+        </div>
+        <div class="produto-card" onclick="abrirModal()">
+          <div class="produto-img">
+                <img src="imagens/Zaad.webp" alt="Floratta Red" class="produto-img-real">
+            <span class="produto-badge laranja">Novo</span>
+          </div>
+          <div class="produto-info">
+            <p class="marca-tag">Oboticário</p>
+            <h3>Zaad</h3>
+            <p class="desc">Fragrância oriental · 50ml</p>
+            <div class="produto-footer">
+              <span class="produto-preco">Consulte</span>
+              <button class="btn-ver">Consultar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-natura">
+      <div class="produtos-grid">
+        <div class="produto-card" onclick="abrirModal()">
+          <div class="produto-img">
+                <img src="imagens/EssencialTradicionalMasc.png" alt="Essencial Tradicional Masc." class="produto-img-real">
+            <span class="produto-badge">Destaque</span>
+          </div>
+          <div class="produto-info">
+            <p class="marca-tag">Natura</p>
+            <h3>Essencial Tradicional</h3>
+            <p class="desc">Fragrância clássica · 100ml</p>
+            <div class="produto-footer">
+              <span class="produto-preco">Consulte</span>
+              <button class="btn-ver">Consultar</button>
+            </div>
+          </div>
+        </div>
+        <div class="produto-card" onclick="abrirModal()">
+          <div class="produto-img">
+              <img src="imagens/KaiakTradicionalMasc.jpg" alt="Kaiak Tradicional Masc." class="produto-img-real">
+          </div>
+          <div class="produto-info">
+            <p class="marca-tag">Natura</p>
+            <h3>Kaiak Tradicional</h3>
+            <p class="desc">Fragrância aquática · 75ml</p>
+            <div class="produto-footer">
+              <span class="produto-preco">Consulte</span>
+              <button class="btn-ver">Consultar</button>
+            </div>
+          </div>
+        </div>
+        <div class="produto-card" onclick="abrirModal()">
+          <div class="produto-img">
+            <img src="imagens/LunaTradicional.jpg" alt="Luna Tradicional" class="produto-img-real">
+          </div>
+          <div class="produto-info">
+            <p class="marca-tag">Natura</p>
+            <h3>Luna Tradicional</h3>
+            <p class="desc">Fragrância floral · 50ml</p>
+            <div class="produto-footer">
+              <span class="produto-preco">Consulte</span>
+              <button class="btn-ver">Consultar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-eudora">
+      <div class="produtos-grid">
+        <div class="produto-card" onclick="abrirModal()">
+          <div class="produto-img">
+            <img src="imagens/EgeoBomb.webp" alt="Egeo Bomb" class="produto-img-real">
+            <span class="produto-badge">Destaque</span>
+          </div>
+          <div class="produto-info">
+            <p class="marca-tag">Eudora</p>
+            <h3>Egeo Bomb</h3>
+            <p class="desc">Fragrância marcante · 100ml</p>
+            <div class="produto-footer">
+              <span class="produto-preco">Consulte</span>
+              <button class="btn-ver">Consultar</button>
+            </div>
+          </div>
+        </div>
+        <div class="produto-card" onclick="abrirModal()">
+          <div class="produto-img">
+            <img src="imagens/EgeoPink.jpg" alt="Egeo Pink" class="produto-img-real">
+          </div>
+          <div class="produto-info">
+            <p class="marca-tag">Eudora</p>
+            <h3>Egeo Pink</h3>
+            <p class="desc">Fragrância doce · 75ml</p>
+            <div class="produto-footer">
+              <span class="produto-preco">Consulte</span>
+              <button class="btn-ver">Consultar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="loja-section" id="loja">
+  <div class="loja-inner">
+    <div class="loja-info">
+      <span class="section-tag">✦ Venha Nos Visitar</span>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:300;color:var(--texto);margin:0.5rem 0 1.5rem;line-height:1.2;">Nossa loja <em style="color:var(--roxo);font-style:italic;">física</em> em Guarulhos</h2>
+
+      <div class="loja-detalhe">
+        <div class="loja-detalhe-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+        </div>
+        <div class="loja-detalhe-body">
+          <h4>Endereço</h4>
+          <p>Rua Salvador Gaeta, 539<br>Vila Augusta — Guarulhos / SP<br>CEP: 07023-010</p>
+        </div>
+      </div>
+
+      <div class="loja-detalhe">
+        <div class="loja-detalhe-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div class="loja-detalhe-body">
+          <h4>Horário de Atendimento</h4>
+          <p>Segunda a Sábado<br>das 09h00 às 18h00</p>
+        </div>
+      </div>
+
+      <div class="loja-detalhe">
+        <div class="loja-detalhe-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.68 11.6 19.79 19.79 0 011.61 3.1 2 2 0 013.6 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.91 8.6a16 16 0 006.29 6.29l.96-.95a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+          </svg>
+        </div>
+        <div class="loja-detalhe-body">
+          <h4>WhatsApp / Telefone</h4>
+          <p><a href="https://wa.me/5511962003974" target="_blank">(11) 96200-3974</a></p>
+        </div>
+      </div>
+
+      <div class="loja-detalhe">
+        <div class="loja-detalhe-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/>
+          </svg>
+        </div>
+        <div class="loja-detalhe-body">
+          <h4>Formas de Pagamento</h4>
+          <p>Pix · Cartão de Crédito/Débito · Dinheiro</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="mapa-placeholder">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--roxo)" stroke-width="1.2">
+          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+        </svg>
+        <p>Rua Salvador Gaeta, 539<br>Vila Augusta · Guarulhos/SP</p>
+        <span>CEP: 07023-010</span>
+        <a class="btn-mapa" href="https://maps.google.com/?q=Rua+Salvador+Gaeta,+539,+Vila+Augusta,+Guarulhos,+SP" target="_blank">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          Ver no Google Maps
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sobre-section" id="sobre">
+  <div class="sobre-grid">
+    <div class="sobre-img-wrap">
+      <div class="sobre-img-box">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/>
+        </svg>
+        <span>Foto da Loja / Marca</span>
+      </div>
+      <div class="sobre-decor-line"></div>
+      <div class="sobre-decor-sq"></div>
+    </div>
+    <div class="sobre-text">
+      <span class="tag-s">✦ Nossa História</span>
+      <h2>Mais do que perfumes,<br><em>experiências</em></h2>
+      <p>A Dassu Presentes nasceu do amor pelas fragrâncias e da vontade de levar até você as melhores opções do mercado, com autenticidade, cuidado e preços justos.</p>
+      <p>Nossa loja física em Guarulhos, na Vila Augusta, é o seu destino para encontrar kits e cosméticos originais — Oboticário, Natura, Eudora — com atendimento personalizado e carinho em cada venda.</p>
+      <div class="diferenciais">
+        <div class="diferencial">
+          <div class="dif-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="dif-text">
+            <h4>Autenticidade</h4>
+            <p>Só vendemos produtos originais, sem exceção.</p>
+          </div>
+        </div>
+        <div class="diferencial">
+          <div class="dif-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div class="dif-text">
+            <h4>Atendimento</h4>
+            <p>Cada cliente recebe atenção personalizada.</p>
+          </div>
+        </div>
+        <div class="diferencial">
+          <div class="dif-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="dif-text">
+            <h4>Loja Física</h4>
+            <p>Venha nos visitar em Guarulhos/SP.</p>
+          </div>
+        </div>
+        <div class="diferencial">
+          <div class="dif-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="dif-text">
+            <h4>Confiança</h4>
+            <p>Construída com cada venda, avaliação a avaliação.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="dep-section" id="depoimentos">
+  <div class="section-header center">
+    <span class="section-tag">✦ Avaliações</span>
+    <h2 class="section-title">O que nossos clientes <em>dizem</em></h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="dep-grid">
+    <div class="dep-card">
+      <div class="dep-stars">★★★★★</div>
+      <blockquote>"OI"</blockquote>
+      <div class="dep-autor">
+        <div class="dep-avatar">M</div>
+        <div class="dep-autor-info"><span>Maria L.</span><span>Cliente Dassu</span></div>
+      </div>
+    </div>
+    <div class="dep-card">
+      <div class="dep-stars">★★★★★</div>
+      <blockquote>"OI"</blockquote>
+      <div class="dep-autor">
+        <div class="dep-avatar">C</div>
+        <div class="dep-autor-info"><span>Carlos R.</span><span>Cliente Fiel</span></div>
+      </div>
+    </div>
+    <div class="dep-card">
+      <div class="dep-stars">★★★★★</div>
+      <blockquote>"OI"</blockquote>
+      <div class="dep-autor">
+        <div class="dep-avatar">A</div>
+        <div class="dep-autor-info"><span>Ana P.</span><span>Cliente Dassu</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Pronto para encontrar o <em>perfume perfeito?</em></h2>
+  <p>Visite nossa loja na Vila Augusta em Guarulhos ou fale pelo WhatsApp. Nossa equipe está pronta para te atender!</p>
+  <div class="cta-btns">
+    <a class="btn-cta-white" onclick="abrirModal()">Falar pelo WhatsApp</a>
+    <a class="btn-cta-outline" onclick="ir('loja')">Ver Endereço</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <div class="footer-logo-img">
+          <div class="footer-logo-ph">
+            <img src="imagens/logo.png" alt="Logo Dassu" style="height:44px; width:auto;">
+          </div>
+        </div>
+        <div class="footer-logo-text">
+          <span class="flt-nome">Dassu</span>
+          <span class="flt-sub">Kits e Cosméticos</span>
+        </div>
+      </div>
+      <p>Kits e cosméticos originais com autenticidade e carinho. Loja física em Guarulhos/SP — Vila Augusta.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Coleções</h4>
+      <ul>
+        <li><a onclick="trocarTabEIr('oboticario')">Oboticário</a></li>
+        <li><a onclick="trocarTabEIr('natura')">Natura</a></li>
+        <li><a onclick="trocarTabEIr('eudora')">Eudora</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Informações</h4>
+      <ul>
+        <li><a onclick="ir('sobre')">Sobre Nós</a></li>
+        <li><a onclick="ir('loja')">Nossa Loja</a></li>
+        <li><a onclick="ir('depoimentos')">Avaliações</a></li>
+        <li><a onclick="abrirModal()">Fale Conosco</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <ul>
+        <li><a href="https://wa.me/5511962003974" target="_blank">WhatsApp: (11) 96200-3974</a></li>
+        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+        <li><a onclick="abrirModal()">Status & Grupos de Venda</a></li>
+      </ul>
+      <div style="margin-top:1rem;padding:0.8rem;background:rgba(255,255,255,0.05);border-radius:3px;border:1px solid rgba(255,255,255,0.08);">
+        <p style="color:rgba(255,255,255,0.5);font-size:0.76rem;margin:0 0 0.3rem;font-weight:300;">📍 Rua Salvador Gaeta, 539</p>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.76rem;margin:0 0 0.3rem;font-weight:300;">Vila Augusta · Guarulhos/SP</p>
+        <p style="color:rgba(255,255,255,0.5);font-size:0.76rem;margin:0;font-weight:300;">Seg–Sáb · 09h às 18h</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Dassu Presentes — Kits e Cosméticos. Todos os direitos reservados. Guarulhos/SP</p>
+    <div class="social-links">
+      <a class="social-link" href="https://wa.me/5511962003974" target="_blank">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </a>
+      <a class="social-link" href="https://instagram.com" target="_blank">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="social-link" href="https://facebook.com" target="_blank">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal" onclick="fecharModalFora(event)">
+  <div class="modal">
+    <button class="modal-close" onclick="fecharModal()">×</button>
+    <h3>Fale com a Dassu ✦</h3>
+    <p>Clique abaixo para conversar no WhatsApp. Tire dúvidas, veja disponibilidade e faça seu pedido com total segurança! Atendemos de segunda a sábado, das 09h às 18h.</p>
+    <a class="wpp-btn" href="https://wa.me/5511962003974" target="_blank">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      Conversar no WhatsApp · (11) 96200-3974
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
